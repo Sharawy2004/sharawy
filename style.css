@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgba(0, 0, 255, 0.589);
+}
+.todo-container{
+    width: fit-content;
+    margin: auto;
+    margin-top: 150px;
+    border: 3px solid black;
+    padding: 15px;
+}
+#add-todo{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+#add-input{
+    padding: 5px 10px;
+    width: 80%;
+    border-radius: 5px;
+}
+#btn-todo{
+    width: 20%;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.664);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#btn-todo:hover{
+    background-color: orange;
+    color: black;
+    transition: 0.5s;
+}
+.box-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+.box{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    width: 150px;
+}
+.task{
+    background-color: darkslategray;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid black;
+    cursor: move;
+}
+.task.is-dragging{
+    background-color: orange;
+}
